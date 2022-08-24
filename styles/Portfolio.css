@@ -1,0 +1,134 @@
+.port-text {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.portfolios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 5%;
+}
+.portfolios .portfolio-item {
+  display: none;
+  position: relative;
+  border-radius: 15px;
+}
+.portfolios .portfolio-item img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+  margin: 0;
+  padding: 0;
+}
+.portfolios .portfolio-item .imgCaption {
+  color: black;
+  background-color: var(--color-opposite);
+  padding: 1vw;
+  border-radius: 0px 0px 15px 15px;
+  text-align: center;
+  margin: 0;
+}
+.portfolios .portfolio-item .imgCaption .projectTags {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.portfolios .portfolio-item .imgCaption .projectTags .tagItem {
+  border-radius: 15px;
+  background-color: #f08080;
+  width: auto;
+  padding: 2%;
+  margin: 0 3%;
+}
+.portfolios .portfolio-item .hover-items {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.4s ease-in-out;
+}
+.portfolios .portfolio-item .hover-items h3 {
+  font-size: 1.5rem;
+  color: var(--color-white);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.portfolios .portfolio-item .hover-items .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolios .portfolio-item .hover-items .icons .icon {
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.portfolios .portfolio-item .hover-items .icons .icon i {
+  font-size: 1.5rem;
+  color: var(--color-white);
+  margin: 0 1rem;
+}
+.portfolios .portfolio-item .hover-items .icons .icon:hover {
+  background-color: var(--color-white);
+}
+.portfolios .portfolio-item .hover-items .icons .icon:hover i {
+  color: var(--color-primary);
+}
+.portfolios .show {
+  display: block;
+}
+.portfolios:after {
+  grid-column: span 3;
+  height: 1vw;
+  content: "";
+}
+
+.filters {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.filters .filterBtn {
+  border-radius: 15px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #d6e5ec;
+  cursor: pointer;
+  margin: 0 3%;
+}
+.filters .filterBtn:hover {
+  background-color: rgb(157, 209, 211);
+}
+.filters .filterBtn.activeFilter {
+  background-color: rgb(34, 95, 228);
+  color: white;
+}
+
+.portfolio-item:hover .hover-items {
+  opacity: 1;
+  transform: scale(1);
+}/*# sourceMappingURL=Portfolio.css.map */

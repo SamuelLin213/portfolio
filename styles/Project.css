@@ -1,0 +1,66 @@
+.projectPage p {
+  line-height: 2rem;
+  padding: 1rem;
+  color: var(--color-grey-1);
+}
+.projectPage .ssCaption {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.projectPage h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2rem 0;
+}
+.projectPage h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2rem 0;
+  position: relative;
+}
+.projectPage h4::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 40%;
+  height: 1px;
+  background-color: var(--color-grey-5);
+  transform: translateX(-50%);
+}
+.projectPage ul {
+  display: block;
+  margin: 0;
+  padding-left: 5%;
+}
+.projectPage ul li {
+  display: list-item;
+  list-style-type: circle;
+  margin: 0;
+  padding: 0;
+}
+.projectPage .projectNav {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  color: black;
+  margin-bottom: 3vw;
+}
+.projectPage .projectNav u, .projectPage .projectNav a {
+  background-color: #f08080;
+  width: auto;
+  padding: 1%;
+  margin: 0 3%;
+}
+.projectPage .projectNav a {
+  border-radius: 15px;
+}
+.projectPage img {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: 20px auto 5px auto;
+}/*# sourceMappingURL=Project.css.map */

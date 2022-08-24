@@ -1,0 +1,68 @@
+.projectPage {
+    p {
+        line-height: 2rem;
+        padding: 1rem;
+        color: var(--color-grey-1);
+    }
+    .ssCaption {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    h3 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 2rem 0;
+    }
+    h4 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 2rem 0;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            width: 40%;
+            height: 1px;
+            background-color: var(--color-grey-5);
+            transform: translateX(-50%);
+        }
+    }
+    ul {
+        display: block;
+        margin: 0;
+        padding-left: 5%;
+        li {
+            display: list-item;
+            list-style-type: circle;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .projectNav {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        color: black;
+        margin-bottom: 3vw;
+        u, a {
+            background-color: #f08080;
+            width: auto;
+            padding: 1%;
+            margin: 0 3%;
+        }
+        a {
+            border-radius: 15px;
+        }
+    }
+    img {
+        width: 70%;
+        height: auto;
+        display: block;
+        margin: 20px auto 5px auto;
+    }
+}
