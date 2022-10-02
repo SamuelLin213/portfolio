@@ -60,3 +60,10 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 filterSelection("all");
+
+var resumeLink = "https://www.dropbox.com/s/f4gphke38vlbwdr/Ying-Jia%28Samuel%29_Lin_Resume.pdf?dl=0";
+var resumeBtn = document.querySelectorAll(".btn-con > a");
+
+resumeBtn.forEach((item) => {
+    item.href = resumeLink;
+});
