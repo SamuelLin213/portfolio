@@ -61,7 +61,7 @@ for (var i = 0; i < btns.length; i++) {
 
 filterSelection("all");
 
-var resumeLink = "https://www.dropbox.com/s/uirhgdi8rlp07c1/Ying-Jia%28Samuel%29_Lin_Resume.pdf?dl=0";
+var resumeLink = "https://www.dropbox.com/s/8qycgb2mxzfc826/Ying-Jia%28Samuel%29_Lin_Resume.pdf?dl=0";
 var resumeBtn = document.querySelectorAll(".btn-con > a");
 
 resumeBtn.forEach((item) => {
