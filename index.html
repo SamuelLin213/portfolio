@@ -291,11 +291,37 @@
             <div class="filters">
                 <button class="filterBtn activeFilter" onclick="filterSelection('all')">Show All</button>
                 <button class="filterBtn" onclick="filterSelection('cpp')">C++</button>
+                <button class="filterBtn" onclick="filterSelection('java')">Java</button>
                 <button class="filterBtn" onclick="filterSelection('react')">React</button>
                 <button class="filterBtn" onclick="filterSelection('vanilla')">Vanilla Web Dev</button>
             </div>
 
             <div class="portfolios">
+                <!-- Chinese Chess -->
+                <div class="portfolio-item java">
+                    <div class="image">
+                        <img src="https://res.cloudinary.com/dui7nse3g/image/upload/v1682280789/mainMap_citr0n.png" alt="Earthquake Map">
+                    </div>
+                    <div class="imgCaption">
+                        <div class="projectTags">
+                            <div class="tagItem">
+                                Java
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hover-items">
+                        <h3>Earthquake Map</h3>
+                        <div class="icons">
+                            <a onclick="handleClick('earthquakeMap')" class="icon">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                            <a rel="noopener noreferrer" target="_blank" href="https://github.com/SamuelLin213/UCSD_Java_1/tree/main/src/module6" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
                 <!-- Chinese Chess -->
                 <div class="portfolio-item cpp">
                     <div class="image">
@@ -1035,7 +1061,7 @@
             </div>
         </section>
 
-        <!-- Info sections for CPP projects -->
+        <!-- Info sections for CPP/Java projects -->
         <section class="projectPage container" id="serendipity">
             <div class="main-title">
                 <h2>Serendipity <span>Database</span><span class="bg-text">C++</span></h2>
@@ -1414,6 +1440,65 @@
             <p>
                 Lastly, there's a button for the (fictitious) contact info of the program developer.
                 <img src="https://res.cloudinary.com/dui7nse3g/image/upload/v1656205243/shape%20parser/contact_easxme.png" alt="Contact 1" class="projectSS">
+            </p>
+        </section>
+        <section class="projectPage container" id="earthquakeMap">
+            <div class="main-title">
+                <h2>Earthquake <span>Map</span><span class="bg-text">Java</span></h2>
+            </div>
+
+            <h4>About</h4>
+            <p>
+                This is my capstone project for <a style="text-decoration:underline;" href="https://www.coursera.org/learn/object-oriented-java" rel="noopener noreferrer" target="_blank">UCSD's Coursera course "Object Oriented Programming in Java".</a>
+                 It's been a while since I last programmed in Java(as courses are mainly taught in C++ at UCR). In preparation for my upcoming internship for summer 2023, which has Java listed in its position description, 
+                 I took this course to brush up on my Java skills. If I recall correctly, the last time I used Java extensively was when I took University of Helsinki's course "Java Programming I" back in 2021, about two years ago! 
+                 Suffice to say, I was a bit rusty in Java! 
+            </p>
+
+            <h4>Project Overview</h4>
+            <div class="projectNav">
+                <u>Jump to:</u>
+                <a href="#map">Map Overview</a>
+                <a href="#hover">Hovering over Markers</a>
+                <a href="#click">Clicking on Markers</a>
+            </div>
+            
+            <h4 id="map">Map Overview</h4>
+            <p>
+                This project uses the <a style="text-decoration:underline;" href="https://processing.org/reference/" rel="noopener noreferrer" target="_blank">Processing</a> and <a style="text-decoration:underline;" href="http://unfoldingmaps.org/javadoc/" 
+                rel="noopener noreferrer" target="_blank">UnfoldingMaps</a> libraries to display a window with an interactive map and map legend. The map can be zoomed in/out(using mouse scroll wheel or -/+ keys) and panned(using click+drag or arrow keys), 
+                and displays markers for earthquakes(both land and ocean quakes), cities and airports. The earthquake data is extracted from <a style="text-decoration:underline;" href="https://www.usgs.gov/programs/earthquake-hazards" rel="noopener noreferrer" 
+                target="_blank">USGS's website.</a> Meanwhile, the city and airport data are parsed in through a local .json file. The color of an earthquake marker depends on its magnitude, and its shape is determined on whether it occured on land or water. 
+                <img src="https://res.cloudinary.com/dui7nse3g/image/upload/v1682280789/mainMap_citr0n.png" alt="Main Map">
+                It's a bit hard to see the various different type of markers(due to the overwhelming number of airport markers). However, if we zoom in, we can get a better look:
+                <img src="https://res.cloudinary.com/dui7nse3g/image/upload/v1682284298/zoom1_wcahal.png" alt="Zoom 1">
+                Here, we can see how there's a city marker for Tokyo. There's a few shallow land quake markers scattered around(indicated by the yellow circles). Note how the land quake near Chiba is marked with a cross, indicating that it occured 
+                within the past hour.
+            </p>
+
+            <h4 id="hover">Hovering over Markers</h4>
+            <p>
+                Hovering the mouse over a marker displays its relevant info. <br>For a city, its name, country and population are displayed:
+                <img src="https://res.cloudinary.com/dui7nse3g/image/upload/v1682286071/cityInfo_ic9piq.png" alt="City Info" style="height:10%; width:auto">
+                For an earthquake, its magnitude, direction city and country are displayed:
+                <img src="https://res.cloudinary.com/dui7nse3g/image/upload/v1682286071/quakeInfo_iwv1nj.png" alt="Quake Info" style="height:10%; width:auto">
+                Finally, for an airport, its name, airport code, city and country are displayed.
+                <img src="https://res.cloudinary.com/dui7nse3g/image/upload/v1682286071/airportInfo_ojvvno.png" alt="Airport Info" style="height:10%; width:auto">
+            </p>
+
+            <h4 id="click">Clicking on Markers</h4>
+            <p>
+                Clicking on markers allows us to further interact with the map.<br>
+                Each earthquake has a radius called the threat circle, in which any location in this circle will be impacted by this quake. When we click on a quake marker, all other quakes are hidden, and only cities and airports that are affected
+                by this quake will remain displayed. For example, let's play around with this quake marker in Mexico:
+                <img src="https://res.cloudinary.com/dui7nse3g/image/upload/v1682287614/quake1_wlyumf.png" alt="Quake 1" >
+                If we click on this marker, notice how airports and cities farther from this quake are hidden, as they're outside the threat circle. Additionally, all other quakes are hidden.
+                <img src="https://res.cloudinary.com/dui7nse3g/image/upload/v1682287614/quake2_weqwdo.png" alt="Quake 2">
+                Clicking on airports and cities yield similar results to each other. Clicking on an airport will hide all other airports and only display quakes that affects it. Meanwhile, clicking on a city hides all other cities and shows only quakes
+                that impact it. Let's click on this city in Venezuela:
+                <img src="https://res.cloudinary.com/dui7nse3g/image/upload/v1682288189/city1_ishspo.png" alt="City 1">
+                Note how upon clicking it, all other cities, as well as quakes that don't affect this city, disappear:
+                <img src="https://res.cloudinary.com/dui7nse3g/image/upload/v1682288189/city2_vafhvb.png" alt="City 2">
             </p>
         </section>
     </main>
