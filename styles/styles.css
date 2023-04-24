@@ -69,6 +69,44 @@ section {
   height: 100vh;
 }
 
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 5%; /* Place the button at the bottom of the page */
+  left: 3%; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: var(--color-secondary); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 1%;
+  border-radius: 50%; /* Rounded corners */
+  width: 6vw;
+  height: 6vw;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.projectNav {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  color: black;
+  margin-bottom: 3vw;
+}
+.projectNav u, .projectNav a {
+  background-color: var(--color-secondary);
+  width: auto;
+  padding: 1%;
+  margin: 0 3%;
+}
+.projectNav a {
+  border-radius: 15px;
+}
+
 .active {
   display: block;
   -webkit-animation: appear 1s ease-in-out;

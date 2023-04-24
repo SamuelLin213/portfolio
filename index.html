@@ -31,6 +31,7 @@
     <script src="https://kit.fontawesome.com/f62fa23133.js" crossorigin="anonymous"></script>
 </head>
 <body class="main-content">
+    <img onclick="topFunction()" id="myBtn" src="top.png"></button>
     <header class="container header active" id="home">
         <div class="header-content">
             <div class="left-header">
@@ -77,7 +78,15 @@
             <div class="main-title">
                 <h2>About <span>me</span><span class="bg-text"></span></h2>
             </div>
-            <h4 class="stat-title">Education</h4>
+
+            <div class="projectNav" style="margin-top:5%;">
+                <u>Jump to:</u>
+                <a href="#education_about">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+            </div>
+
+            <h4 class="stat-title" id="education_about">Education</h4>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="tl-icon">
@@ -102,7 +111,7 @@
                 </div>
             </div>
 
-            <h4 class="stat-title">Experience</h4>
+            <h4 class="stat-title" id="experience">Experience</h4>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="tl-icon">
@@ -173,8 +182,8 @@
                     </div>
                 </div>
             </div> -->
-            <div class="about-stats">
-                <h4 class="stat-title">My Skills</h4>
+            <div class="about-stats" >
+                <h4 class="stat-title" id="skills">My Skills</h4>
                 <!-- <div class="progress-bars">
                     <div class="progress-bar">
                         <p class="prog-title">html5</p>
@@ -674,13 +683,20 @@
                 </div>
             </div>
         </section>
+
         <section class="container" id="education">
             <div class="blogs-content">
                 <div class="main-title">
                     <h2>My <span>Education</span><span class="bg-text"></span></h2>
                 </div>
+                
+                <div class="projectNav" style="margin-top:5%;">
+                    <u>Jump to:</u>
+                    <a href="#courses_edu">Courses</a>
+                    <a href="#certs_edu">Certifications</a>
+                </div>
 
-                <h4 class="stat-title">Courses</h4>
+                <h4 class="stat-title" id="courses_edu">Courses</h4>
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="tl-icon">
@@ -837,7 +853,7 @@
 
 
 
-                <h4 class="stat-title">Certifications</h4>
+                <h4 class="stat-title" id="certs_edu">Certifications</h4>
                 <div class="certification">
                     <div class="cert-item">
                         <a href="https://verified.sertifier.com/en/verify/91390101909282" target="_blank" rel="noopener noreferrer" class="abt-text">
