@@ -92,21 +92,20 @@
                     <div class="tl-icon">
                         <i class="fa-solid fa-school-flag"></i>
                     </div>
-                    <p class="tl-duration">2021 - 2025</p>
-                    <h5>University of California, Riverside<span> - B.S. Computer Science</span></h5>
-                    <p>
-                        GPA: 3.9<br>
-                        Chancellor's Honor List(2022-), Dean's Honor List(2021-)
-                    </p>
+                    <p class="tl-duration">2023 - 2025</p>
+                    <h5>University of California, San Diego<span> - B.S. Computer Science</span></h5>
+                    <!-- <p>
+                        Chancellor's Honor List(2022-2023), Dean's Honor List(2021-2023)
+                    </p> -->
                 </div>
                 <div class="timeline-item">
                     <div class="tl-icon">
                         <i class="fa-solid fa-school-flag"></i>
                     </div>
-                    <p class="tl-duration">2017 - 2021</p>
-                    <h5>Trabuco Hills High School<span> - High School Diploma</span></h5>
+                    <p class="tl-duration">2021 - 2023</p>
+                    <h5>University of California, Riverside<span> - B.S. Computer Science</span></h5>
                     <p>
-                        GPA: 3.8 Unweighted; 4.5 Weighted
+                        Chancellor's Honor List(2022-2023), Dean's Honor List(2021-2023)
                     </p>
                 </div>
             </div>
@@ -118,7 +117,7 @@
                         <i class="fa-sharp fa-solid fa-compass"></i>
                     </div>
                     <p class="tl-duration">November 2022 - April 2023</p>
-                    <h5>Engineering for Good Developer<span> - UC Riverside</span></h5>
+                    <h5>Software Developer Intern<span> - Engineering for Good, UCR</span></h5>
                 </div>
                 <div class="timeline-item">
                     <div class="tl-icon">
@@ -306,7 +305,30 @@
             </div>
 
             <div class="portfolios">
-                <!-- Chinese Chess -->
+                <!-- Java Projects -->
+                <div class="portfolio-item java">
+                    <div class="image">
+                        <img src="https://res.cloudinary.com/dui7nse3g/image/upload/v1683584524/main_cgyfqd.png" alt="Text Editor">
+                    </div>
+                    <div class="imgCaption">
+                        <div class="projectTags">
+                            <div class="tagItem">
+                                Java
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hover-items">
+                        <h3>Text Editor</h3>
+                        <div class="icons">
+                            <a onclick="handleClick('textEditor')" class="icon">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                            <a rel="noopener noreferrer" target="_blank" href="https://github.com/SamuelLin213/UCSD_Java_2/tree/main/src" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <div class="portfolio-item java">
                     <div class="image">
                         <img src="https://res.cloudinary.com/dui7nse3g/image/upload/v1682280789/mainMap_citr0n.png" alt="Earthquake Map">
@@ -689,7 +711,7 @@
                 <div class="main-title">
                     <h2>My <span>Education</span><span class="bg-text"></span></h2>
                 </div>
-                
+
                 <div class="projectNav" style="margin-top:5%;">
                     <u>Jump to:</u>
                     <a href="#courses_edu">Courses</a>
@@ -698,6 +720,13 @@
 
                 <h4 class="stat-title" id="courses_edu">Courses</h4>
                 <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="tl-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <p class="tl-duration">May 2023</p>
+                        <h5>Data Structures and Performance<span> - UC San Diego, Coursera</span></h5>
+                    </div>
                     <div class="timeline-item">
                         <div class="tl-icon">
                             <i class="fa-solid fa-location-dot"></i>
@@ -855,6 +884,12 @@
 
                 <h4 class="stat-title" id="certs_edu">Certifications</h4>
                 <div class="certification">
+                    <div class="cert-item">
+                        <a href="https://www.coursera.org/account/accomplishments/verify/RB4SMMR55VA5" target="_blank" rel="noopener noreferrer" class="abt-text">
+                            <p class="large-text">Data Structures and Performance <i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                            <p class="small-text">UC San Diego, Coursera<br /> May 2023</p>
+                        </a>
+                    </div>
                     <div class="cert-item">
                         <a href="https://verified.sertifier.com/en/verify/91390101909282" target="_blank" rel="noopener noreferrer" class="abt-text">
                             <p class="large-text">Intro to Quantum Computing <i class="fa-solid fa-arrow-up-right-from-square"></i></p>
@@ -1515,6 +1550,89 @@
                 <img src="https://res.cloudinary.com/dui7nse3g/image/upload/v1682288189/city1_ishspo.png" alt="City 1">
                 Note how upon clicking it, all other cities, as well as quakes that don't affect this city, disappear:
                 <img src="https://res.cloudinary.com/dui7nse3g/image/upload/v1682288189/city2_vafhvb.png" alt="City 2">
+            </p>
+        </section>
+        <section class="projectPage container" id="textEditor">
+            <div class="main-title">
+                <h2>Text <span>Editor</span><span class="bg-text">Java</span></h2>
+            </div>
+
+            <h4>About</h4>
+            <p>
+                This is my capstone project for <a style="text-decoration:underline;" href="https://www.coursera.org/learn/data-structures-optimizing-performance?" rel="noopener noreferrer" target="_blank">UCSD's Coursera course "Data Structures and Performance".</a>
+                In this project, I integrated data structures into a text editor app, which includes spelling suggestions and autocompletion. I feel like this
+                project gave a really nice refresher on applications of fundamental data structures. I look forward to taking UCSD's
+                next course on intermediate data structures!
+            </p>
+
+            <h4>Project Overview</h4>
+            <div class="projectNav">
+                <u>Jump to:</u>
+                <a href="#textOverview">Text Editor Overview</a>
+                <a href="#textButtons">Button Actions</a>
+                <a href="#textSpelling">Spelling Suggestions</a>
+                <a href="#textAutocomplete">Autocompletion</a>
+            </div>
+
+            <h4 id="textOverview">Text Editor Overview</h4>
+            <p>
+                Upon opening the app, a blank input box is presented, alongside several
+                buttons on the right, which allows interacting with the text.
+                <img src="https://res.cloudinary.com/dui7nse3g/image/upload/v1683584524/main_cgyfqd.png" alt="Text Editor Main">
+                Checkbox options near the bottom allow for spelling suggestions and autocompletion.
+                <br>
+                Here's a brief list of main data structures used to implement the features:
+                <ul>
+                  <li>Markov Generation: uses list of nodes; each node stores list of "next words"</li>
+                  <li>Spelling: uses BST and dictionary to check valid spelling/if a word exists</li>
+                  <li>Autocomplete: uses trie to compute closely related words</li>
+                  <li>Edit Distance: uses tree to compute number of edits</li>
+                </ul>
+            </p>
+
+            <h4 id="textButtons">Button Actions</h4>
+            <p>
+                The "Load Text" button prompts for a local file to import, and whether to append or replace
+                the text in the input box.
+                <img src="https://res.cloudinary.com/dui7nse3g/image/upload/v1683584525/loadFile_v9iygq.png" alt="Import Text">
+                The "Flesch Index" will calculate the value known as the Flesch Index, which
+                provides an estimation on the reading level of the text. Higher scores correspond to
+                an easier reading level, while lower scores are higher levels. Read more
+                 <a style="text-decoration:underline;" href="https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests#Flesch_reading_ease"
+                rel="noopener noreferrer" target="_blank">at its Wikipedia article.</a>
+                <br>
+                Here, we have some sample text already in the input box; clicking the "Flesch Index" button
+                will display a value at the bottom lefthand corner.
+                <img src="https://res.cloudinary.com/dui7nse3g/image/upload/v1683584525/fleschIndex_qvlhzc.png" alt="Flesch Index">
+                In the case that there's no text in the input box, an appropriate error is displayed.
+                <img src="https://res.cloudinary.com/dui7nse3g/image/upload/v1683584525/fleschError_u3o9rq.png" alt="Flesch Error">
+                The "Edit Distance" button allows us to find how many "single chararcter edits"
+                (insert, delete, replace) it takes to edit word 1 to word 2.
+                <img src="https://res.cloudinary.com/dui7nse3g/image/upload/v1683584525/distanceMenu_oplzni.png" alt="Distance Menu">
+                For example, if we try "hello" as word 1 and "goodbye" as word 2, we'll get the following:
+                <img src="https://res.cloudinary.com/dui7nse3g/image/upload/v1683584525/distanceResult_bo1wvr.png" alt="Distance Result">
+                The "Generate Markov Text" button allows us to generate text using
+                <a style="text-decoration:underline;" href="https://en.wikipedia.org/wiki/Markov_chain"
+               rel="noopener noreferrer" target="_blank">a Markov Chain</a>, which
+               predicts text based on the patterns of existing text.<br>
+               A window pops up, and prompts for the number of words to generate.
+                <img src="https://res.cloudinary.com/dui7nse3g/image/upload/v1683584525/markovMenu_nl2z33.png" alt="Markov Menu">
+                The text will then be generated and displayed in the window, using text from the input box.
+                <img src="https://res.cloudinary.com/dui7nse3g/image/upload/v1683584525/markovResult_wz1oko.png" alt="Markov Results">
+            </p>
+
+            <h4 id="textSpelling">Spelling Suggestions</h4>
+            <p>
+                Checking the "Spelling Suggestions" option enables the text editor to
+                highlight any word that is spelled incorrectly.
+                <img src="https://res.cloudinary.com/dui7nse3g/image/upload/v1683584525/spelling_zwpkpp.png" alt="Spelling">
+            </p>
+
+            <h4 id="textAutocomplete">Autocompletion</h4>
+            <p>
+                Checking the "AutoComplete" option enables the text editor to suggest
+                words, while the user types.
+                <img src="https://res.cloudinary.com/dui7nse3g/image/upload/v1683584525/autocomplete_iu84wa.png" alt="Autocomplete">
             </p>
         </section>
     </main>
