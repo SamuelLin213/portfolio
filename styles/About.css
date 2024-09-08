@@ -120,4 +120,15 @@
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .python {
   width: 70%;
+}
+
+.companyLogo {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: white;
+  max-height: 1.5em;
+  max-width: 1.5em;
+  padding: 0.1em;
+  margin-left: 0.5em;
+  border-radius: 25%;
 }/*# sourceMappingURL=About.css.map */
