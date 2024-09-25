@@ -78,7 +78,6 @@ section {
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
   background-color: var(--color-secondary); /* Set a background color */
-  color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 1%;
   border-radius: 50%; /* Rounded corners */

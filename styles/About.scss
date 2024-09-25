@@ -65,6 +65,21 @@
     }
 }
 
+.companyLogo {
+    display:inline-block; 
+    vertical-align: middle;
+  
+    background-color: white;    
+    border-style: solid;
+    border-color: #191d2b;
+    border-width: thin;
+    max-height:1.5em; 
+    max-width: 1.5em;
+    padding: 0.1em;
+    margin-left: 0.5em;
+    border-radius: 25%;
+}
+
 .about-stats {
     padding-bottom: 4rem;
     .progress-bars {

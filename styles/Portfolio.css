@@ -40,7 +40,7 @@
 }
 .portfolios .portfolio-item .imgCaption .projectTags .tagItem {
   border-radius: 15px;
-  background-color: var(--color-secondary);
+  background-color: #f08080;
   width: auto;
   padding: 2%;
   margin: 0 3%;

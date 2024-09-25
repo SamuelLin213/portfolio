@@ -42,6 +42,22 @@
   margin: 0;
   padding: 0;
 }
+.projectPage .projectNav {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  color: black;
+  margin-bottom: 3vw;
+}
+.projectPage .projectNav u, .projectPage .projectNav a {
+  background-color: #f08080;
+  width: auto;
+  padding: 1%;
+  margin: 0 3%;
+}
+.projectPage .projectNav a {
+  border-radius: 15px;
+}
 .projectPage img {
   width: 70%;
   height: auto;

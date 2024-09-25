@@ -20,19 +20,19 @@ header {
 .header-content .left-header .name {
   font-size: 3rem;
   width: 50%;
-  margin-left: 40%;
+  margin-left: 50%;
   margin-right: 40%;
-  text-align: center;
 }
 .header-content .left-header .name span {
   color: var(--color-secondary);
 }
 .header-content .left-header p {
-  margin: 1.5rem auto;
+  margin: 1.5rem 0;
+  margin-left: 10%;
   line-height: 2rem;
 }
 .header-content .left-header p .fa-stack {
-  /* margin: -5px; */
+  margin: -5px;
 }
 .header-content .left-header .h-shape {
   transition: all 0.4s ease-in-out;
